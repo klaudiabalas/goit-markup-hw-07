@@ -15,7 +15,7 @@
         <div class="container nav">
         <nav class="box">
             <a class="logo link " href="./index.html">Web<span class="logo-decoration">Studio</span></a>
-            <ul class="menu">
+            <ul class="menu list">
                 <li>
                     <a class="link-design link item link-active" href="./index.html">Studio</a>
                 </li>
@@ -23,29 +23,41 @@
                     <a class="link-design link item" href="./portfolio.html">Portfolio</a>
                 </li>
                 <li>
-                    <a class="link-design link item link-contacts-transition " href="">Contacts</a>
+                    <a class="link-design link item" href="">Contacts</a>
                 </li>
             </ul>
         </nav>
         <address class="address-design">
-        <ul class="menu list-address ">
-            <li><a class="contact link link-contacts-transition " href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="contact link link-contacts-transition " href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        <ul class="menu-address list">
+            <li><a class="contact link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="contact link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
          </ul>
         </address>
+        <menu class="menu-hamburger">
+            <button
+              type="button"
+              class="button-hamburger menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg width="32" height="22">
+                <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+              </svg>
+            </button>
+          </menu>
         </div>
     </header>
     <main>
     <section class="title-background">
         <div class="container">
-        <h1 class="title heading-flex ">Effective Solutions for Your Business</h1>
+        <h1 class="title">Effective Solutions for Your Business</h1>
         <button data-modal-open class="button" type="button">Order Service</button>
         </div>
     </section>
     <section class="section">
         <div class="container">
         <h2 class="visually-hidden">.</h2>
-        <ul class="list menu-item list-feature ">
+        <ul class="list menu-header">
             <li class="item">
                 <div class="icon-conteiner">
                     <svg width="64" height="64">
@@ -93,10 +105,10 @@
         </ul>
         </div>
     </section>
-    <section class="section section-photo">
+    <section class="section-photo">
         <div class="container">
         <h2 class="header">What are we doing</h2>
-        <ul class="list heading-second-lists">
+        <ul class="list menu-item-photo">
         <li class="item-photo"><img src="./images/img1.jpg" alt="old IMac" width="360" height="300"/></li>
         <li class="item-photo"><img src="./images/img2.jpg" alt="IPhone screen" width="360" height="300"/></li>
         <li class="item-photo"><img src="./images/img3.jpg" alt="IPhone" width="360" height="300"/></li>
@@ -104,13 +116,13 @@
         </div>
     </section>
     <section class="section-team">
-        <div class="container">
+        <div class="container-team">
         <h2 class="section-team-header">Our Team</h2>
-        <ul class="list menu-item">
+        <ul class="list menu-item-teams">
             <li class="team">
             <img src="./images/img.jpg" alt="Man in a blue shirt with short stubble" width="264"/>
             <div class="team-container">
-            <h3 class="heading-third name">Mark Guerrero</h3>
+            <h3 class="team-name name">Mark Guerrero</h3>
             <p class="paragraph text">Product Designer</p>
                 <ul class="list social-icon">
                     <li class="social-item">
@@ -146,7 +158,7 @@
             <li class="team">
             <img src="./images/img(1).jpg" alt="Man in a blue shirt with smile" width="264"/>
             <div class="team-container">
-            <h3 class="heading-third name">Tom Ford</h3>
+            <h3 class="team-name name">Tom Ford</h3>
             <p class="paragraph text">Frontend Developer</p>
             <ul class="list social-icon">
                 <li class="social-item">
@@ -183,7 +195,7 @@
             <li class="team">
             <img src="./images/img(2).jpg" alt="Woman in a pink sweater" width="264"/>
             <div class="team-container">
-            <h3 class="heading-third name">Camila Garcia</h3>
+            <h3 class="team-name name">Camila Garcia</h3>
             <p class="paragraph text">Marketing</p>
             <ul class="list social-icon">
                 <li class="social-item">
@@ -220,7 +232,7 @@
             <li class="team">
             <img src="./images/img(3).jpg" alt="Man in a grey t-shrit with stubble" width="264"/>
             <div class="team-container">
-            <h3 class="heading-third name">Daniel Wilson</h3>
+            <h3 class="team-name name">Daniel Wilson</h3>
             <p class="paragraph text">UI Designer</p>
             <ul class="list social-icon">
                 <li class="social-item">
@@ -260,7 +272,7 @@
     <section class="section-customers">
         <div class="container">
             <h2 class="section-team-header">Customers</h2>
-            <ul class="list menu-item-cutomers">
+            <ul class="list menu-item-customer">
                 <li class="customers">
                     <a class="customers-box" href="">
                         <svg class="customers-icon"  width="104" height="56">
@@ -308,9 +320,9 @@
     </section>
     </main>
 <footer class="footer-background">
-        <div class="container footer-container">
+        <div class="container-footer">
             <div class="footer">
-                <a class="footer-logo link link-footer" href="./index.html">Web<span class="logo-decorations">Studio</span></a>
+                <a class="footer-logo link" href="./index.html">Web<span class="logo-decorations">Studio</span></a>
                  <p class="footer-paragraph">Increase the flow of customers and
                                          sales for your business with digital
                                          marketing & growth solutions.</p>
@@ -411,8 +423,76 @@
         </div>
         <button class="bottom-send" type="submit">Send</button>
     </form>
-    </div></div>
+    </div>
+    <div class="js-menu-container menu-container-a" id="mobile-menu">
+        <div class="hamburger-div">
+          <div class="hamburger-button-container">
+            <button class="js-close-menu hamburger-close-button">
+              <svg class="hamburger-close-svg" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+              </svg>
+            </button>
+          </div>
+          <nav class="hamburger-navigation">
+            <ul class="hamburger-nav-list">
+              <li>
+                <a class="hamburger-nav-link link" href="./index.html">Studio</a>
+              </li>
+              <li>
+                <a class="hamburger-nav-link link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li><a class="hamburger-nav-link link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+  
+          <address class="hamburger-address">
+            <ul class="hamburger-address-list">
+              <li>
+                <a class="hamburger-phone link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="hamburger-mail link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="hamburger-social-media-list">
+            <li class="hamburger-social-media-li">
+              <a class="hamburger-social-media-link" href="">
+                <svg class="hamburger-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="hamburger-social-media-li">
+              <a class="hamburger-social-media-link" href="">
+                <svg class="hamburger-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="hamburger-social-media-li">
+              <a class="hamburger-social-media-link" href="">
+                <svg class="hamburger-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="hamburger-social-media-li">
+              <a class="hamburger-social-media-link" href="">
+                <svg class="hamburger-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </div>
 <script src="./js/modal.js"> </script>
-<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
