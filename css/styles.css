@@ -119,6 +119,7 @@ body{
     border: none;
     background-color: #fff;
     stroke: #2e2f42;
+    cursor: pointer;
   }
 
   .menu-hamburger {
@@ -1045,6 +1046,7 @@ margin-left: 95px;
         padding-right: 15px;
         margin-left: auto;
         margin-right: auto;
+        max-width: 768px;
     }
   
     .section {
@@ -1986,6 +1988,7 @@ margin-left: 95px;
     display: flex;
     align-items: baseline;
     margin-left: 156px;
+    flex-direction: row;
 }
 
 .socials-media{
