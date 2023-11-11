@@ -1215,8 +1215,7 @@ fill: #fff;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 64px;
-    margin-left: 108px;
-    margin-right: 108px;
+    justify-content: center;
 }
 
 .section-team{
@@ -1225,6 +1224,7 @@ fill: #fff;
 }
 
 .team{
+    max-width: 264px;
     background-color: #FFF;
     flex-basis: calc((100% - 24px) / 2);
     border-radius: 0px 0px 4px 4px;
