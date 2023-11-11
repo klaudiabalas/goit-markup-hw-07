@@ -2017,6 +2017,8 @@ fill: #fff;
 
 .subscribe-footer{
     margin-left: 16px;
+    fill: #fff;
+    color: currentColor
 }
 
 /* -------------------------- HAMBURGER MOBILE --------------------------- */
