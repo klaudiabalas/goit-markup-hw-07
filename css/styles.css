@@ -64,10 +64,6 @@ body{
       margin-left: auto;
       margin-right: auto;
     }
-  
-    .section {
-      padding: 96px 0;
-    }
 
 
 /* header */
@@ -260,6 +256,16 @@ body{
     margin-left: 40px;
   }
 
+  @media (max-width:428px) {
+    .hamburger-social-media-list  {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 48px;
+        margin-bottom: 40px;
+        margin-left: 40px;
+        gap: 0px;
+    }}
+
   .hamburger-social-media-li {
     height: 40px;
     width: 40px;
@@ -286,6 +292,10 @@ body{
     width: 16px;
     height: 16px;
   }
+
+  .link-active{
+    color: #404BBF;
+}
 
 /* sekcja pierwsza */
 
@@ -1178,7 +1188,7 @@ fill: #fff;
 .paragraph{
     color: #434455;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.5em;
     letter-spacing: 0.32px;
 }
